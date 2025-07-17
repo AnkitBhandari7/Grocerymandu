@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocerymandu.com</title>
+    <link rel="stylesheet" href="cs.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            box-sizing: border-box;
+            text-decoration: none;
+            overflow-x: hidden;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+
+        .flash-sale-heading {
+            text-align: center;
+            padding: 1%;
+
+
+        }
+
+        /* Product row styles */
+        .product-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Allow products to wrap to the next line if needed */
+            column-gap: 50px;
+
+            color: #fff;
+        }
+
+        /* Product box styles */
+        /* Product box styles */
+        .product-box {
+            border: 2px;
+            border-color: #d50000;
+            box-shadow: 0 0 10px rgba(0, 0, 0.3);
+            border-radius: 32px;
+            padding: 20px;
+            width: 300px;
+            margin-bottom: 0%;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            transition: transform 0.1s ease-in-out;
+            /* Adding transition for smooth hover effect */
+        }
+
+        .product-box:hover {
+            transform: translateY(-9px);
+            /* Move the box up slightly on hover */
+        }
+
+        .product-box img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 16px;
+        }
+
+        .product-box .original-price {
+            font-size: 16px;
+            /* Increased font size */
+            color: #676767;
+            /* Original price color */
+            text-decoration: line-through;
+            /* Add strike-through to original price */
+            margin-bottom: 5px;
+        }
+
+        .discounted-price {
+            font-size: 24px;
+            /* Decreased font size */
+            font-weight: bold;
+            color: #d50000;
+            /* Discounted price color */
+            margin-bottom: 10px;
+        }
+
+        .product-box button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product-box button:hover {
+            background-color: rgb(103, 180, 166);
+        }
+
+        .price-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-row .product-box .product-box img :hover {
+            box-shadow: 1px 1px 20px;
+
+        }
+
+        .divbox {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin: 10px 0px 0px 0px;
+        }
+
+        .slider {
+            width: 95%;
+            height: 80%;
+            overflow: hidden;
+            margin-top: 6%;
+            margin-left: 2%;
+        }
+
+
+
+
+        .slider img {
+            width: 1368px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar  -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/photo/Grocerymandu-modified.png" alt="Logo">
+        </div>
+        <!-- search-box -->
+        <div class="search-box">
+            <form action="#" method="get">
+                <input type="text" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <ul class="navbar-bold">
+            <div><b>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html" class="active">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Reasearch.html">Research</a></li>
+                    <li><a href="about.html">About Us</a></li>
+            </div></b>
+        </ul>
+
+    </nav>
+
+
+
+
+    <div class="slider">
+        <div id="slider-content">
+            <img src="/photo/imageslider3.jpg">
+        </div>
+    </div>
+
+    <section style="margin-top: 2%;">
+        <h1 class="flash-sale-heading"> <b style="font-size: larger; color: red;">OUR'S PRODUCTS</b></h1>
+
+        <div class="product-row">
+
+            <!-- chicken box -->
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/chicken breast.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Chicken Breast</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 285</p>
+                        <p class="original-price">NRP. 300</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- EGG box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/egg.jpg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> EGG</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 420</p>
+                        <p class="original-price">NRP. 450</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- coffee box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/coffee.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Nescafe Classic Coffee</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 285</p>
+                        <p class="original-price">NRP. 300</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- Milk box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/milk.jpg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Milk</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 50</p>
+                        <p class="original-price">NRP. 60</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+        </div>
+        <div class="product-row">
+
+            <!-- Donuts box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/Donuts.jpg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Choclate Donut's</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 25</p>
+                        <p class="original-price">NRP. 30</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- Ramen box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/ramen.jpg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Ramen Noodles</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 220</p>
+                        <p class="original-price">NRP. 250</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- choclayte box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/choclatebar.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Cadbery Celebration</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 900</p>
+                        <p class="original-price">NRP. 950</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- honey box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/honey.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Dabur Honey</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 470</p>
+                        <p class="original-price">NRP. 500</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+
+            </div>
+        </div>
+        <div class="product-row">
+            <!-- jam box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/jam.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Jam</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 185</p>
+                        <p class="original-price">NRP. 200</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+
+            <!-- basmita chamal box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/ruhab basmati .jpg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Ruhab Basmati Rice</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 1199</p>
+                        <p class="original-price">NRP. 1300</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- butter box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/butter.jpg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Butter</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 130</p>
+                        <p class="original-price">NRP. 150</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+            <!-- kuch kuch box -->
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/kuchkuch.jpg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> KuchKuch Bhujiya </h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 330</p>
+                        <p class="original-price">NRP. 350</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- hard and cold drinks section -->
+    <section>
+        <h1 class="flash-sale-heading"> <b style="font-size: larger; color: red;"> Hard Drink's And Soft Drinks's </b>
+        </h1>
+        <div class="product-row">
+
+            <!-- Real juice box -->
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/RealJuice.jpeg" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Real Juice </h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 290</p>
+                        <p class="original-price">NRP. 300</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/slice.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Slice</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 120</p>
+                        <p class="original-price">NRP. 130</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/Gigri.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Gigriii (250 ml)</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 50</p>
+                        <p class="original-price">NRP. 65</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/combo pack.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Combo Pack (2L)</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 720</p>
+                        <p class="original-price">NRP. 750</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+        </div>
+        <div class="product-row">
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/Appleslider.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Apple Slider</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 235</p>
+                        <p class="original-price">NRP. 250</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/bigmaster.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Big Matser</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 285</p>
+                        <p class="original-price">NRP. 300</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/blacklvel.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> Black level (Full)</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 9,700</p>
+                        <p class="original-price">NRP. 10,100</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="description.html">
+                    <img src="/photo/vodka.png" alt="Product Image" style="height: 260px; width: 260px;">
+                    <h2> 8848 (Full)</h2>
+                    <p>Start your day right with the first sip of this classic that awakens your senses to new
+                        opportunities.</p>
+                    <div class="divbox">
+                        <p class="discounted-price">NRP. 1180</p>
+                        <p class="original-price">NRP. 1240</p>
+                    </div>
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+    <script>
+        var images = ["/photo/imageslider3.jpg", "/photo/imageslider1.png", "/photo/imageslider2.jpg"];
+        var x = 0;
+        var img = document.getElementById("slider-content");
+        setInterval(slider, 3000);
+        function slider() {
+            if (x < images.length) {
+                x = x + 1;
+            } else {
+                x = 1;
+            }
+            img.innerHTML = "<img src=" + images[x - 1] + ">"
+        }
+    </script>
+
+
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="footer-content">
+
+            <img src="/photo/Grocerymandu-modified.png" alt="logo">
+
+            <p>Grocerymandu is an e-commerce website for Grocery equipment and accessories. <br>
+                We are the #1 retailer in this category with 100% customer satisfaction outcomes.</p>
+            <hr>
+            <div class="Payment">
+                <h5 style="text-align: end; float:left; color: #ffffff; margin-top: 1%;">Payment Partners:</h5>
+
+                <img src="/photo/Esewa.png" alt="Esewa" style="float:center;">
+                <img src="/photo/khalti.png" alt="khalti" style="float: center; ">
+                <img src="/photo/ime.png" alt="khalti" style="float: left;">
+                <img src="/photo/mastercard.png" alt="khalti" style="float: left;">
+                <img src="/photo/cash on delivery.jpg" alt="khalti" style="float: left;">
+                <img src="/photo/images.png" alt="Connectips" style="float: left; ">
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="footer">
+        <footer>
+            <p style="color: #fff;">&copy; 2024 Grocerymandu. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
