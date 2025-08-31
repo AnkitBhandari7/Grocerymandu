@@ -69,7 +69,7 @@ Screenshots
 ![Blog Page](images/Blogpage5.png)
 
 ### About Page
-![About Page](images/Aboutpage1.png)
+![About Page](images/Aboutuspage1.png)
 
 
 Author
